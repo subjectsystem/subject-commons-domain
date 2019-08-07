@@ -1,9 +1,10 @@
 package com.miyako.subject.commons.domain;
 
 import javax.persistence.*;
+import java.io.Serializable;
 
-@Table(name = "subject..tb_teacher")
-public class TbTeacher {
+@Table(name = "tb_teacher")
+public class TbTeacher implements Serializable{
     /**
      * id 主键
      */
